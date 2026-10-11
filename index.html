@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArtBots | Terms of Service</title>
+<meta name="description" content="ArtBots XAT Bot Service terms of service, acceptable use, account rules, cookies and GDPR information.">
+<meta name="theme-color" content="#08090d">
+<link rel="icon" href="assets/artbots-logo.jpg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap');
+:root{--red:#ff2038;--silver:#e7e9ee;--muted:#a8adba;--panel:rgba(7,8,12,.88);--line:rgba(255,255,255,.13)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:#050609;color:var(--silver);font-family:'Rajdhani',sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:#050609 url("assets/artbots-background.gif") center/cover no-repeat;opacity:.36}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.76)),linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.2))}
+a{color:#ff6c7d;text-decoration:none}a:hover{color:#fff;text-shadow:0 0 10px #ff2038}
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px clamp(18px,5vw,70px);background:rgba(5,6,10,.94);border-bottom:1px solid #ff203866;backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:12px;font:700 12px Orbitron,sans-serif;letter-spacing:2px;color:#fff}
+.brand img{width:38px;height:38px;object-fit:cover;border-radius:50%;border:1px solid #ff2038;box-shadow:0 0 18px #ff203855}
+.brand b{color:var(--red)}
+.top-tag{border:1px solid #ff203866;padding:9px 12px;font:700 10px Orbitron,sans-serif;letter-spacing:1.5px;color:#ff9aa5}
+.wrap{width:min(1120px,calc(100% - 36px));margin:0 auto;padding:48px 0 70px}
+.hero{display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px;margin-bottom:28px}
+.kicker{font:700 11px Orbitron,sans-serif;letter-spacing:3px;color:#ff7180}
+h1{font:800 clamp(32px,5vw,58px)/1.1 Orbitron,sans-serif;letter-spacing:-1.5px;margin:13px 0 12px}
+h1 span{color:var(--red)}
+.hero p{max-width:690px;margin:0;color:#c2c6d0;font-size:19px;line-height:1.55}
+.hero-stamp{align-self:center;border:1px solid #ff20385a;padding:16px 18px;text-align:center;background:rgba(12,8,12,.8);box-shadow:0 0 28px #ff203814}
+.hero-stamp strong{display:block;font:700 11px Orbitron,sans-serif;letter-spacing:1.5px}
+.hero-stamp span{display:block;margin-top:8px;color:#a9aebb;font-size:13px}
+.notice{display:flex;gap:13px;align-items:flex-start;padding:17px 19px;margin-bottom:20px;border:1px solid #ff20384f;border-left:3px solid var(--red);background:rgba(16,7,11,.85);color:#c9cdd5;font-size:17px;line-height:1.5}
+.notice strong{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.terms-card{padding:22px 23px;background:var(--panel);border:1px solid var(--line);position:relative;overflow:hidden;backdrop-filter:blur(12px);box-shadow:0 12px 32px #0004}
+.terms-card:before{content:"";position:absolute;top:0;left:0;width:70px;height:2px;background:var(--red);box-shadow:0 0 15px #ff2038}
+.terms-card-head{margin-bottom:15px;padding-bottom:13px;border-bottom:1px solid #ffffff18}
+.terms-card-head span{font:700 10px Orbitron,sans-serif;letter-spacing:2px;color:#ff7180}
+.terms-card h2{font:700 clamp(16px,2vw,20px)/1.35 Orbitron,sans-serif;margin:8px 0 0;color:#f2f3f6}
+.terms-list{padding-left:20px;margin:0;color:#c6cad3;font-size:16px;line-height:1.5}
+.terms-list li{padding:4px 0 4px 3px}
+.terms-list li::marker{color:#ff4055}
+.terms-lead{font-size:16px;color:#d5d8df;margin:0 0 8px}
+.terms-sub{font:700 12px Orbitron,sans-serif;letter-spacing:1px;color:#ff7180;margin:17px 0 7px}
+.terms-note{display:flex;align-items:flex-start;gap:11px;padding:11px 12px;margin:10px 0;background:#ff20380d;border:1px solid #ff20382c;color:#c6cad3;font-size:15px;line-height:1.45}
+.terms-note span{flex:0 0 auto;font:700 9px Orbitron,sans-serif;letter-spacing:1px;color:#ff7180;padding-top:3px}
+.terms-note p{margin:0}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#a6ffc3;background:#102017;padding:2px 5px;border:1px solid #35ff8629}
+.disclaimer{margin-top:18px;padding:22px;border:1px solid #ff20385c;background:rgba(14,6,10,.9)}
+.disclaimer h2{font:700 15px Orbitron,sans-serif;color:var(--red);margin:0 0 9px;letter-spacing:1px}
+.disclaimer p{margin:0;color:#c6cad3;font-size:17px;line-height:1.55}
+.footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:26px;padding-top:17px;border-top:1px solid #ffffff20;color:#8e94a1;font-size:13px;letter-spacing:.4px}
+.footer b{color:#ff7180}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero-stamp{display:none}.grid{grid-template-columns:1fr}.wrap{padding-top:30px}.topbar{padding-inline:14px}.top-tag{font-size:8px;letter-spacing:.7px}.terms-card{padding:19px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="https://artbots.ro" target="_blank" rel="noopener noreferrer"><img src="assets/artbots-logo.jpg" alt="ArtBots logo"><span>ART<b>BOTS</b> / TERMS</span></a>
+<div class="top-tag">XAT BOT SERVICE · RULES & POLICY</div>
+</header>
+<main class="wrap">
+<section class="hero">
+<div><div class="kicker">◈ OFFICIAL ARTBOTS DOCUMENT</div><h1>TERMS OF <span>SERVICE</span></h1><p>By logging into or registering with ArtBots bots, or by using the service, you agree to the terms and conditions listed below.</p></div>
+<div class="hero-stamp"><strong>ARTBOTS / LEGAL</strong><span>RULES · PRIVACY · SERVICE</span></div>
+</section>
+<div class="notice"><span style="color:#ff4055;font-size:20px">!</span><div>Please read these terms carefully before using the service. You must also comply with <a href="https://xat.com/terms" target="_blank" rel="noopener noreferrer">Xat's Terms of Service</a>.</div></div>
+<div class="grid">
+<section class="terms-card" id="section-01"><div class="terms-card-head"><span>01 / TERMS</span><h2>ACCEPTANCE OF TERMS</h2></div><ul class="terms-list"><li>By logging into or registering with ArtBots bots, or by using the service, you agree to these terms and conditions.</li></ul></section><section class="terms-card" id="section-02"><div class="terms-card-head"><span>02 / TERMS</span><h2>ACCEPTABLE USE</h2></div><ul class="terms-list"><li>This service may not be used to transmit anything that could be found law-breaking, pornographic or is deemed inappropriate by <a href="https://xat.com/" target="_blank" rel="noopener noreferrer">Xat.com</a>.</li></ul><div class="terms-note"><span>NOTE</span><p>Please see <a href="https://xat.com/terms" target="_blank" rel="noopener noreferrer">Xat’s Terms of Service</a> as well as reading ours.</p></div><p class="terms-lead">You may <strong>NOT</strong>:</p><ul class="terms-list"><li>Disrupt use of the service.</li><li>Attempt to exploit any part of the service.</li><li>Use this service to <strong>PROMOTE OTHER BOT SERVICES</strong>.</li><li>Harvest or collect any personal information.</li><li>Use this service if you are legally not allowed.</li><li>Modify, reverse engineer, or change any part of the service.</li></ul></section><section class="terms-card" id="section-03"><div class="terms-card-head"><span>03 / TERMS</span><h2>ARTBOTS RIGHTS</h2></div><ul class="terms-list"><li>ArtBots does not guarantee that everybody will use the service properly.</li><li>ArtBots reserves the right to moderate and monitor the service.</li><li>ArtBots reserves the right to terminate your use of the service at any time for any reason.</li><li>ArtBots reserves the right to modify, view, edit, or delete users and bots without any notice.</li><li>ArtBots reserves the right to change these terms of service without any notice.</li></ul></section><section class="terms-card" id="section-04"><div class="terms-card-head"><span>04 / TERMS</span><h2>XAT ACCOUNTS</h2></div><ul class="terms-list"><li>You are responsible for the security of your account. ArtBots takes no responsibility for anybody stealing your account, or any portion of it.</li></ul></section><section class="terms-card" id="section-05"><div class="terms-card-head"><span>05 / TERMS</span><h2>BOT ACCOUNTS</h2></div><ul class="terms-list"><li>If you rent your bot to other people without authorization from ArtBots (allowing users to pay to use it for a set period), this will be considered a breach of these terms. Your account may be terminated and your ID may be blocked from buying bots.</li><li>An account without an email set, with no bot payment made, and inactive for more than 2 years may be deleted and/or made available for new registration.</li></ul><div class="terms-note"><span>EXCEPTION</span><p>Accounts with an email set or with at least one payment made are not included in this category.</p></div></section><section class="terms-card" id="section-06"><div class="terms-card-head"><span>06 / TERMS</span><h2>DONATIONS</h2></div><ul class="terms-list"><li>Donations are non-refundable.</li><li>Donations go towards the continued operation of the ArtBots website and service.</li></ul></section><section class="terms-card" id="section-07"><div class="terms-card-head"><span>07 / TERMS</span><h2>REFUNDS</h2></div><ul class="terms-list"><li>ArtBots is <strong>NOT</strong> responsible for refunds if you decide to stop using the service. We do not give refunds.</li><li>If you move to another bot provider and request a refund, your request will be <strong>DENIED</strong>.</li></ul></section><section class="terms-card" id="section-08"><div class="terms-card-head"><span>08 / TERMS</span><h2>COOKIES</h2></div><ul class="terms-list"><li>ArtBots uses cookies for the website to function and for analytics. We do not use third-party cookies for advertising, only for website statistics.</li></ul><div class="terms-note"><span>COOKIE</span><p><strong>__cfduid</strong> — security cookie intended to help protect the site against hacking attempts.</p></div><div class="terms-note"><span>COOKIE</span><p><strong>lingua</strong> — stores the selected website language.</p></div><div class="terms-note"><span>COOKIE</span><p><strong>userlog</strong> — allows users to remain logged in to the site.</p></div></section><section class="terms-card" id="section-09"><div class="terms-card-head"><span>09 / TERMS</span><h2>GDPR — REGULATION (EU) 2016/679</h2></div><ul class="terms-list"><li>The General Data Protection Regulation (GDPR) aims to protect the personal and sensitive data of users.</li></ul><h3 class="terms-sub"><strong>ArtBots website</strong></h3><ul class="terms-list"><li>ArtBots stores the email address needed to provide the requested service and help protect the service.</li><li>ArtBots does <strong>NOT</strong> disclose users’ sensitive data to third parties.</li><li>Sensitive data related to donations or payments are not stored by ArtBots. They are handled by the relevant payment platforms, such as xat.com and/or PayPal. ArtBots records only the amount received and the related account name, without references to sensitive payment data.</li></ul><h3 class="terms-sub"><strong>xat.com data</strong></h3><ul class="terms-list"><li>ArtBots may store and process public data provided by users on xat.com, such as regname, ID, powers, nickname and similar information, for moderation and control features requested by users of the service.</li><li>This information is public on xat.com when users choose to make it visible under xat.com’s terms. Users should avoid sharing sensitive information on xat.com or any social network.</li><li>ArtBots provides the command <code>!userinfo on/off</code> to let users show or hide this public information. By default, the setting uses an opt-in system, so ArtBots does not share this information without the user’s permission.</li><li>Users may request deletion of this data after a period of 6 months from its last processing, subject to legal requirements relating to safety and compliance with applicable laws. This service is intended to support the control and moderation of inappropriate content.</li></ul></section><section class="terms-card" id="section-10"><div class="terms-card-head"><span>10 / TERMS</span><h2>DISCLAIMER</h2></div><ul class="terms-list"><li>ArtBots is provided “as is” and “as described”, without any warranty from ArtBots. ArtBots is not responsible for misuse of this service.</li></ul></section>
+</div>
+<section class="disclaimer"><h2>DISCLAIMER</h2><p>ArtBots is provided “as is” and “as described”, without any warranty by ArtBots. ArtBots will not be responsible for any misuse of this service.</p></section>
+<footer class="footer"><span>© ARTBOTS · XAT BOT SERVICE</span><span><a href="https://artbots.ro" target="_blank" rel="noopener noreferrer">ARTBOTS.RO</a> · <b>TERMS OF SERVICE</b></span></footer>
+</main>
+</body>
+</html>
